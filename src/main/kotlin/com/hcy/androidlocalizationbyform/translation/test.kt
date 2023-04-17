@@ -15,8 +15,9 @@ class test : AnAction() {
 //            Messages.showMessageDialog(this, "test", "first Action", Messages.getInformationIcon())
 //        }
 //        选择文件
-        var descriptor = FileChooserDescriptor(true, false, false, true, false, true)
-        var chooseFile = FileChooser.chooseFiles(descriptor, e.project, null)
+        val descriptor = FileChooserDescriptor(true, false, false, true, false, true)
+        "请选择翻译表格文件！".also { descriptor.description = it }
+        val chooseFile = FileChooser.chooseFiles(descriptor, e.project, null)
         for (file in chooseFile) {
             println("name = ${file.name}")
             println("path = ${file.path}")
