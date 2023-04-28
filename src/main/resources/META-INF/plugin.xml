@@ -36,10 +36,16 @@
     </extensions>
 
     <actions>
-        <action id="com.hcy.androidlocalizationbyform" class="com.hcy.androidlocalizationbyform.translation.test"
+        <action id="test" class="com.hcy.androidlocalizationbyform.translation.test"
                 text="test" description="测试">
             <add-to-group group-id="HelpMenu" anchor="first"/>
             <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl alt T"/>
+        </action>
+        <action id="choosexml" class="com.hcy.androidlocalizationbyform.translation.ChooseXml"
+                text="choosexml" description="选择中文xml 文件">
+<!--            <add-to-group group-id="ProjectViewPopupMenu" anchor="first"/>-->
+            <add-to-group group-id="ProjectViewPopupMenu" anchor="first"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="shift F"/>
         </action>
     </actions>
 </idea-plugin>
