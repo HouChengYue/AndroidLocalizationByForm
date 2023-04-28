@@ -42,10 +42,15 @@
             <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl alt T"/>
         </action>
         <action id="choosexml" class="com.hcy.androidlocalizationbyform.translation.ChooseXml"
-                text="choosexml" description="选择中文xml 文件">
+                text="选择表格文件加载翻译" description="选择表格文件加载翻译">
 <!--            <add-to-group group-id="ProjectViewPopupMenu" anchor="first"/>-->
             <add-to-group group-id="ProjectViewPopupMenu" anchor="first"/>
             <keyboard-shortcut keymap="$default" first-keystroke="shift F"/>
+        </action>
+        <action id="show_dialog" class="com.hcy.androidlocalizationbyform.translation.ShowDialog"
+                text="选择Xml和表格文件加载翻译" description="选择Xml和表格文件加载翻译">
+            <add-to-group group-id="ToolsMenu" anchor="first"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="T"/>
         </action>
     </actions>
 </idea-plugin>
